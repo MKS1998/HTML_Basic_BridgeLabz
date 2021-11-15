@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGELABZ</title>
+    <style>
+        body { padding: 2em; }
+
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .mainContainerItem{
+            text-align: left;
+            background:deepskyblue;
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem{
+            background: gold;
+        }
+        
+        .sideBarRightItem{
+            background: hotpink;
+        }
+        .sideBarItem {
+            flex: 1 0 0 ;
+            border: 1px solid green;
+        }
+        .mainContainerItem{
+            flex: 3 0px;
+        }
+        .sideBarLeftItem{
+            order: 1;
+        }
+        .mainContainerItem{
+            order: 2;
+        }
+        .sideBarRightItem{
+            order: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="headerContainer">HEADER - SAMPLE FLEXBOX EXAMPLE</header>
+    <div class="mainContainer">
+        <section class="mainContainerItem">
+            <article>
+                <h2>Dogecoin</h2>
+                <p>Dogecoin, seen by some as the original "memecoin" caused a stir in 2021 as the price of the coin 
+				skyrocketed. The coin, which uses an image of the shiba inu as its avatar, is accepted as a form of payment 
+				by some major companies including the Dallas Mavericks, Kronos, and, perhaps most notably, SpaceX, 
+				an American aerospace manufacturer owned by Elon Musk..</p>
+            </article>
+            <article>
+                <h2>Bitcoin Cash (BCH)</h2>
+                <p>Bitcoin Cash (BCH) holds an important place in the history of altcoins because it is one
+				 of the earliest and most successful hard forks of the original Bitcoin. In the 
+				 cryptocurrency world, a fork takes place as the result of debates and arguments 
+				 between developers and miners. Due to the decentralized nature of digital currencies, 
+				 wholesale changes to the code underlying the token or coin at hand must be made due to 
+				 general consensus; the mechanism for this process varies according to the particular cryptocurrency..</p>
+            </article>
+            <article>
+                <h2>CoinDCX</h2>
+                <p>CoinDCX is India's largest and safest cryptocurrency exchange. Our exchange is 
+				built with user experience and security in mind. ...
+				We provide users single-point access to a diverse suite of crypto-based financial 
+				products and services that are backed by security processes and insurance.</p>
+            </article>
+        </section>
+    <sidebar class="sideBarItem sideBarLeftItem"> Left Side Bar </sidebar>
+    <sidebar class="sideBarItem sideBarRightItem"> Right Side Bar </sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+</html>
